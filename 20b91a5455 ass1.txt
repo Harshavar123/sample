@@ -1,0 +1,49 @@
+x=int(input("enter the number"))
+y=1
+for i in range(x):
+    for j in range(i+1):
+        print(y,end=" ")
+        y=y+1
+    print()
+
+
+output:
+enter the number5
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+
+
+que:2
+
+x =int(input()) 
+y = int(input())
+
+for num in range(x, y + 1):
+    order = len(str(num))
+    sum = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+
+    if num == sum:
+        print("amstrong number are")
+        print(num)
+
+  output:
+100
+1000
+amstrong number are
+153
+amstrong number are
+370
+amstrong number are
+371
+amstrong number are
+407
+
